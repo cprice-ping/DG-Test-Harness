@@ -45,7 +45,7 @@ spec:
               key: USER_BASE_DN
               name: env-vars
         image: pingidentity/pingdirectory:latest
-        imagePullPolicy: ""
+        imagePullPolicy: "Always"
         name: pingdirectory
         ports:
         - containerPort: 389

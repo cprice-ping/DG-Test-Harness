@@ -46,7 +46,6 @@ spec:
         - containerPort: 443
         - containerPort: 636
         resources: {}
-        volumeMounts:
         envFrom:
           - secretRef:
               name: devops-secret
