@@ -8,7 +8,6 @@
 --acceptLicense  \
     --licenseKeyFile /opt/out/instance/PingDirectory.lic  \
     --baseDN dc=dgtesting.com  \
-    --addBaseEntry  \
     --localHostName '${HOSTNAME}'  \
     --ldapPort 389  \
     --skipPortCheck  \
