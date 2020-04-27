@@ -9,17 +9,6 @@ dsconfig set-trust-manager-provider-prop \
     --set enabled:true 
 
 dsconfig create-external-server \
-    --server-name PAP  \
-    --type policy  \
-    --set base-url:https://pingdatagov-pap:9443  \
-    --set hostname-verification-method:allow-all  \
-    --set key-manager-provider:Null  \
-    --set 'trust-manager-provider:Blind Trust'  \
-    --set shared-secret:AAABglahShvk60m2Yvjv1FH237cFGHzJceI=  \
-    --set decision-node:e51688ff-1dc9-4b6c-bb36-8af64d02e9d1  \
-    --set branch:defaultPolicies.SNAPSHOT 
-
-dsconfig create-external-server \
     --server-name PingDir  \
     --type api  \
     --set base-url:https://pingdirectory:2443  \
