@@ -50,7 +50,7 @@ dsconfig set-store-adapter-prop \
     --adapter-name UserStoreAdapter  \
     --set enabled:true  \
     --set load-balancing-algorithm:failover  \
-    --set include-base-dn:dc=${USER_BASE_DN} 
+    --set include-base-dn:${USER_BASE_DN} 
 
 dsconfig create-scim-resource-type \
     --type-name Users  \
