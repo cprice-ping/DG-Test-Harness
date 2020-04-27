@@ -9,7 +9,7 @@
     --licenseKeyFile /opt/out/instance/PingDirectory.lic  \
     --baseDN dc=dgtesting.com  \
     --addBaseEntry  \
-    --localHostName '${PING_LOCAL_HOST_NAME}'  \
+    --localHostName '${HOSTNAME}'  \
     --ldapPort 389  \
     --skipPortCheck  \
     --rootUserDN cn=dmanager  \
@@ -19,7 +19,7 @@
     --doNotStart  \
     --ldapsPort 636  \
     --httpsPort 443  \
-    --instanceName '${PING_INSTANCE_NAME}'  \
+    --instanceName '${HOSTNAME}'  \
     --location Docker  \
     --enableStartTLS  \
     --generateSelfSignedCertificate  \
