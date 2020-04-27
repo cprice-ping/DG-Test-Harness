@@ -65,7 +65,7 @@ dsconfig set-access-control-handler-prop \
 
 dsconfig set-backend-prop \
     --backend-name userRoot  \
-    --set compact-common-parent-dn:ou=People,{{USER_BASE_DN}} 
+    --set compact-common-parent-dn:ou=People,${USER_BASE_DN}
 
 dsconfig set-connection-handler-prop \
     --handler-name 'HTTPS Connection Handler'  \
