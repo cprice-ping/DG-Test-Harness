@@ -105,21 +105,10 @@ dsconfig set-root-dn-user-prop \
     --add alternate-bind-dn:cn=administrator 
 
 dsconfig create-root-dn-user \
-    --user-name pingdatasync  \
-    --set alternate-bind-dn:cn=datasync  \
-    --set alternate-bind-dn:cn=sync  \
-    --set password:{PBKDF2}ABDj4rMLDrgVNOD+sdTluqEyJxAztKDzcVF4FptfCOqtRC0wQg0djnn/uTDzabH9mrFhFg==  \
-    --set inherit-default-root-privileges:false  \
-    --set privilege:bypass-acl  \
-    --set privilege:bypass-pw-policy  \
-    --set privilege:config-read  \
-    --set privilege:password-reset  \
-    --set privilege:unindexed-search 
-
-dsconfig create-root-dn-user \
     --user-name pingdatagovernance  \
     --set alternate-bind-dn:cn=pdg  \
     --set alternate-bind-dn:cn=datagov  \
+    --set alternate-bind-dn:cn=pingdatagovernance \
     --set password:2FederateM0re  \
     --set inherit-default-root-privileges:false  \
     --set privilege:config-read  \
