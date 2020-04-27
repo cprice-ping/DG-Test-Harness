@@ -9,5 +9,5 @@ kind: ConfigMap
 metadata:
   creationTimestamp: null
   labels:
-    io.kompose.service: pingaccess-env-vars
+    io.kompose.service: env-vars
   name: env-vars

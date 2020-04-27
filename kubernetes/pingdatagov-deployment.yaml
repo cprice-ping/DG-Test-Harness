@@ -33,7 +33,7 @@ spec:
         - name: SERVER_PROFILE_PATH
           value: pingdatagovernance
         - name: SERVER_PROFILE_URL
-          value: https://github.com/cprice-ping/Profile-Consent-Demo.git
+          value: https://github.com/cprice-ping/DG-Test-Harness.git
         - name: USER_BASE_DN
           valueFrom:
             configMapKeyRef:

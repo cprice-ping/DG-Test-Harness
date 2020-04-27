@@ -38,7 +38,7 @@ spec:
         - name: SERVER_PROFILE_PATH
           value: pingdirectory
         - name: SERVER_PROFILE_URL
-          value: https://github.com/pingidentity/Customer360.git
+          value: https://github.com/cprice-ping/DG-Test-Harness.git
         - name: USER_BASE_DN
           valueFrom:
             configMapKeyRef:
