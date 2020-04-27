@@ -65,7 +65,7 @@ dsconfig set-access-control-handler-prop \
 
 dsconfig set-backend-prop \
     --backend-name userRoot  \
-    --set compact-common-parent-dn:ou=People,dc=dgtesting.com 
+    --set compact-common-parent-dn:ou=People,{{USER_BASE_DN}} 
 
 dsconfig set-connection-handler-prop \
     --handler-name 'HTTPS Connection Handler'  \
@@ -93,12 +93,7 @@ dsconfig set-log-publisher-prop \
 
 dsconfig set-log-publisher-prop \
     --publisher-name 'File-Based Debug Logger'  \
-    --set enabled:true 
-
-dsconfig create-debug-target \
-    --publisher-name 'File-Based Debug Logger'  \
-    --target-name com.unboundid.guitools.replicationcli  \
-    --set debug-level:verbose 
+    --set enabled:false 
 
 dsconfig set-root-dn-user-prop \
     --user-name 'Directory Manager'  \
