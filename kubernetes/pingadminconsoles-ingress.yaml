@@ -12,20 +12,6 @@ metadata:
 spec:
   # Use the AWS Route53 FQDNs to access the Admin Consoles
   rules:
-  # This rule gives external access to the PingAccess Admin Console
-  - host: pingaccess-ping-cloud-devops-eks-cprice.ping-devops.com
-    http:
-      paths:
-       - backend:
-           serviceName: pingaccess
-           servicePort: 9000
-  # This rule gives external access to the PingFederate Admin Console
-  - host: pingfederate-ping-cloud-devops-eks-cprice.ping-devops.com
-    http:
-      paths:
-       - backend:
-          serviceName: pingfederate
-          servicePort: 9999
   # This rule gives external access to the PingData Admin Console
   - host: pingdataconsole-ping-cloud-devops-eks-cprice.ping-devops.com
     http:
@@ -33,20 +19,6 @@ spec:
        - backend:
           serviceName: pingdataconsole
           servicePort: 8443
-  # This rule gives external access to the PingDataGovernance-PAP Admin Console
-  - host: pingdatagov-pap-ping-cloud-devops-eks-cprice.ping-devops.com
-    http:
-      paths:
-       - backend:
-          serviceName: pingdatagov-pap
-          servicePort: 443
-  # This rule gives external access to the PingCentral Admin Console
-  - host: pingcentral-ping-cloud-devops-eks-cprice.ping-devops.com
-    http:
-      paths:
-       - backend:
-          serviceName: pingcentral
-          servicePort: 9022
   # This rule gives external access to the PingDirectory ConfigAPI
   - host: pingdirectory-ping-cloud-devops-eks-cprice.ping-devops.com
     http:
@@ -60,4 +32,4 @@ spec:
       paths:
        - backend:
           serviceName: pingdatagov
-          servicePort: 4443
+          servicePort: 443

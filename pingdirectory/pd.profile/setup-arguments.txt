@@ -25,4 +25,5 @@
     --generateSelfSignedCertificate  \
     --encryptDataWithPassphraseFromFile /opt/staging/pwd  \
     --no-prompt  \
+    --sampleData 1000
     --verbose 
