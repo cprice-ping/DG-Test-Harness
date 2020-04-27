@@ -117,15 +117,12 @@ dsconfig create-root-dn-user \
     --set privilege:unindexed-search 
 
 dsconfig create-root-dn-user \
-    --user-name pingfederate  \
-    --set alternate-bind-dn:cn=fed  \
-    --set alternate-bind-dn:cn=pf  \
-    --set alternate-bind-dn:cn=pingfederate  \
+    --user-name pingdatagovernance  \
+    --set alternate-bind-dn:cn=pdg  \
+    --set alternate-bind-dn:cn=datagov  \
     --set password:{PBKDF2}ABCKzDJ/ALi+sEZdM3xExnJvJxC4fWYrvvCZGOMWdwB83LjRFmv4mWT/yV4DgDn8PeoTUQ==  \
     --set inherit-default-root-privileges:false  \
     --set privilege:config-read  \
-    --set privilege:password-reset  \
-    --set privilege:permit-get-password-policy-state-issues  \
     --set privilege:proxied-auth  \
     --set privilege:unindexed-search  \
     --set is-proxyable:prohibited 
@@ -173,5 +170,3 @@ dsconfig create-plugin \
     --set base-dn:ou=sessions,dc=dgtesting.com  \
     --set filter:(objectClass=pf-authn-session-groups)  \
     --set 'polling-interval:1 d' 
-
-
