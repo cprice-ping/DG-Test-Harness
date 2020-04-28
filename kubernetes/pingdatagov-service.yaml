@@ -10,13 +10,14 @@ metadata:
   name: pingdatagov
 spec:
   ports:
-  - name: "4443"
-    port: 4443
+  # - name: "4443"
+  #   port: 4443
+  #   targetPort: 443
+  - name: "443"
+    port: 443
     targetPort: 443
-  - name: "2636"
-    port: 2636
+  - name: "636"
+    port: 636
     targetPort: 636
   selector:
     io.kompose.service: pingdatagov
-status:
-  loadBalancer: {}

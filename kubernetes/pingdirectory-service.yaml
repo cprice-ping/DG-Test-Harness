@@ -13,16 +13,14 @@ spec:
   - name: "389"
     port: 389
     targetPort: 389
-  - name: "1636"
-    port: 1636
+  - name: "636"
+    port: 636
     targetPort: 636
   - name: "443"
     port: 443
     targetPort: 443
-  - name: "2443"
-    port: 2443
-    targetPort: 2443
+  # - name: "2443"
+  #   port: 2443
+  #   targetPort: 2443
   selector:
     io.kompose.service: pingdirectory
-status:
-  loadBalancer: {}
