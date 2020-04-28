@@ -31,7 +31,7 @@ spec:
               key: PING_IDENTITY_ACCEPT_EULA
               name: env-vars
         - name: SERVER_PROFILE_PATH
-          value: pingdatagovernance
+          value: pingdatagov
         - name: SERVER_PROFILE_URL
           value: https://github.com/cprice-ping/DG-Test-Harness.git
         - name: USER_BASE_DN

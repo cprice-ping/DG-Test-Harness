@@ -8,26 +8,25 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-passthrough: "true"
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
   name: pingadminconsoles-ingress
-  namespace: ping-cloud-devops-eks-cprice
 spec:
   # Use the AWS Route53 FQDNs to access the Admin Consoles
   rules:
   # This rule gives external access to the PingData Admin Console
-  - host: pingdataconsole-ping-cloud-devops-eks-cprice.ping-devops.com
+  - host: dataconsole.${PING_IDENTITY_K8S_NAMESPACE}.ping-devops.com
     http:
       paths:
        - backend:
           serviceName: pingdataconsole
           servicePort: 8443
   # This rule gives external access to the PingDirectory ConfigAPI
-  - host: pingdirectory-ping-cloud-devops-eks-cprice.ping-devops.com
+  - host: directory.${PING_IDENTITY_K8S_NAMESPACE}.ping-devops.com
     http:
       paths:
        - backend:
           serviceName: pingdirectory
           servicePort: 443
   # This rule gives external access to the PingDataGov ConfigAPI
-  - host: pingdatagov-ping-cloud-devops-eks-cprice.ping-devops.com
+  - host: datagov.${PING_IDENTITY_K8S_NAMESPACE}.ping-devops.com
     http:
       paths:
        - backend:
